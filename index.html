@@ -64,8 +64,49 @@ li a:hover:not(.active) {
 	    <div class="img-container">
           <img src="imgs/1adc43ee1729eaf38c478e8e9c2705c31.jpg" width="1000" height="600" alt=""/></div>
       </div>
-</div>	<style>
-	</style>
+</div>	
+<style>
+.slider-frame{
+    overflow:hidden;
+    height: 600px;
+    width:1000px;
+    margin-left: 26%;
+    margin-top:20px;
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1000px;}
+    30% {left:1000px;}
+    40% {left:2000px;}
+    50% {left:2000px;}
+    60% {left:1000px}
+    70% {left:1000px}
+    80% {left:0}
+    90% {left:0}
+    100%{left:0}
+}
+
+.slide-images{
+    width:3000px;
+    height:600px;
+    margin: 0 0 0 -2000px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state:running;
+}
+
+.img-container {
+    height: 600px;
+    width:1000px;
+    position: relative;
+    float: left;
+}
+</style>
 <img src="https://i2.lensdump.com/i/rbtk9a.png" href="Actual Image and Video Gallery 1.html">
 <section class="banner_b">
     <h1 class="parallax_b">HINDU TEMPLE <br> YOUTH GROUP</h1>
