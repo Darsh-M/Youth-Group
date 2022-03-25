@@ -85,6 +85,7 @@ h2{
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	cursor: pointer;
 }
 
 .col:hover{
@@ -92,6 +93,10 @@ h2{
 }
 
 .col:hover .caption{
+	display: block;
+}
+
+.col:hover img{
 	display: block;
 }
 
